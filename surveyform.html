@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey-Form</title>
+</head>
+<body>
+
+    <header>
+        <h1>moodDaleCamp Survey Form</h1>
+        <h2>
+            <em>Thank you for taking the time to help us improve the platform</em>
+        </h2>
+    </header>
+
+    <main>
+        <form action="surveyform.html" method="POST" enctype="application/x-www-form-urlencoded">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+
+            <br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your Email">
+
+            <br><br>
+
+            <label for="tel">Phone number:</label><br>
+            <input type="tel" name="tel" placeholder="Mobile number">
+
+            <br><br>
+
+            <label for="age">Age (optional)</label><br>
+            <input type="date" name="age" id="age" placeholder="Age" min="10" max="99">
+
+            <br><br>
+
+            <label>What option best describes your current role?</label><br>
+            <select name="wobdycr">
+            <optgroup label="Select current role">
+                <option value="student">Student</option>
+                <option value="fulltimejob">Full Time Job</option>
+                <option value="fulltimelearner">Full Time Learner</option>
+                <option value="prefernottosay">Prefer not to say</option>
+                <option value="others">Others</option>
+            </optgroup>
+            </select>
+
+            <br><br>
+
+            <label>Would you recommend Mooddale Camp to a friend?</label><br>
+            <input type="radio" name="recommend" value="definitely">definitely<br>
+            <input type="radio" name="recommend" value="maybe">Maybe<br>
+            <input type="radio" name="recommend" value="notsure">Not Sure<br>
+
+            <br>
+
+            <label>What is your favourite feature of Mooddale Camp:</label><br>
+            <select>
+                <optgroup label="Select an option">
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="opensource">OpenSource</option>
+                </optgroup>
+            </select>
+
+            <br><br>
+
+            <label>What would you like to see improved? (Check all that apply)</label><br>
+            <input type="checkbox" name="improvement" value="Frontendprojects">Front-end Projects<br>
+            <input type="checkbox" name="improvement" value="backendprojects">Back-end Projects<br>
+            <input type="checkbox" name="improvement" value="datavisualization">Data Visualization<br>
+            <input type="checkbox" name="improvement" value="challenges">Challenges<br>
+            <input type="checkbox" name="improvement" value="opensourcecommunity">Open Source Community<br>
+            <input type="checkbox" name="improvement" value="gitterhelprooms">Gitter help rooms<br>
+            <input type="checkbox" name="frontendprojects" value="videos">Videos<br>
+            <input type="checkbox" name="frontendprojects" value="citymeetups">City Meetups<br>
+            <input type="checkbox" name="frontendprojects" value="wiki">Wiki<br>
+            <input type="checkbox" name="frontendprojects" value="forum">Forum<br>
+            <input type="checkbox" name="frontendprojects" value="additionalcourses">Additional Courses<br>
+
+            <br>
+
+            <label>Any comments or suggestions?</label><br>
+            <textarea name="comments" cols="60" rows="6"></textarea>
+
+            <br><br>
+
+            <input type="hidden" name="source" value="surveyform">
+            <input type="submit" value="Submit">
+
+        </form>    
+    </main>
+    
+</body>
+</html>
